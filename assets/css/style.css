@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #828285;
+    position: relative;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+
+/* ------ Header stuff ------ */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #57849b;
+    color: #ffffff;
+    justify-content: space-between;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+header h1 .seo {
+    color: #d9dcd6;
+}
+
+header div {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+header div ul {
+    list-style-type: none;
+}
+
+header div ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+/* ------ Header END ------ */
+
+
+/* ------ Hero ------ */
+.hero {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/sunset.jpg");
+    background-size: cover;
+    background-position: center;
+}
+/* ------ Hero END ------ */
+
+
+/* ------ About Me ------ */
+.about-me {
+    background-color: #57849b;
+    display: flex;
+    display: inline-flex;
+    width: 100%;
+    padding: 40px 35px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 25px;    
+}
+
+.about-me img{
+    max-height: 250px;
+    border: 5px solid black;
+    border-image: fill;
+}
+
+.about-me p {
+    font-size: 20px;
+    max-width: 750px;
+    min-width: 200px;
+    padding: 5px 0 10px 3px;
+    word-wrap: break-word;
+
+}
+/* ------ About Me END ------ */
+
+
+/* ------ Works ------ */
+.works {
+    background-color: #57849b;
+    display: flex;
+    padding: 40px 35px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.works h2 {
+    margin: 10vh 0 10vh 0;
+}
+
+.works div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 0 0 20%
+}
+
+.works div li{
+    list-style-type: none;
+    height: auto;
+}
+
+.new-work {
+    flex: 0 0 80%;
+}
+
+.works div img {
+    width: 100%;
+    height: auto;
+    min-height: 5vh;
+    min-width: 100px;
+    padding: 0;
+    border: 0;
+    object-fit: contain;
+    vertical-align: bottom;
+    margin: 0;
+    border: 5px solid black;
+    border-image: fill;
+}
+
+.container {
+    position: relative;
+    width: 50%;
+    max-width: 250px;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width:100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+/* ------ Works END -------*/
+
+
+/* ------ Contact Me ------ */
+.contact-me {
+    display: flex;
+    width: 100%;
+    padding: 40px 35px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: #57849b;
+    margin-bottom: 25px;
+}
+
+.contact-me h2 {
+    border-right: 5px  solid #57849b;
+}
+
+.contact-me ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-me ul li {
+    font-size: 20px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 25px;
+}
+/* ------ Contact me END ------- */
+
+/* ------ Footer ------*/
+footer {
+    background-color: #57849b;
+    display: flex;
+    display: inline-flex;
+    width: 100%;
+    padding: 40px 35px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 25px;  
+}
+/* ------ Footer END ------ */
+
+/* ------ misc ------*/
+.resume {
+    font-size: 24px;
+}
